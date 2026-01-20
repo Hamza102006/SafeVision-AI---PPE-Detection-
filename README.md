@@ -1,30 +1,58 @@
-#SafeVision AI – PPE Detection
+# SafeVision AI – PPE Detection
 
-#Overview
-SafeVision AI is a real-time Personal Protective Equipment (PPE) detection system designed to improve workplace safety and compliance. The system uses a YOLOv8-based computer vision model to detect hardhats, masks, safety vests, and gloves from live video streams or webcam input. It is built to support automated safety monitoring and reduce the need for manual inspections.
+## Overview
+SafeVision AI is a real-time Personal Protective Equipment (PPE) detection system designed to improve workplace safety and compliance. The system uses a YOLOv8-based computer vision model to detect hardhats, masks, safety vests, and gloves from live video streams or webcam input. It supports automated identification of safety violations and reduces the need for manual inspections.
 
-The project demonstrates applied computer vision, deep learning model integration, and real-time inference using Python.
+This project demonstrates applied computer vision, deep learning inference, and real-time video processing using Python.
 
-#Key Features
-- Real-time PPE detection from live video and webcam feeds
-- Detection of multiple PPE categories including hardhats, masks, vests, and gloves
-- High-performance object detection using YOLOv8
-- Automated flagging of PPE non-compliance
-- Designed for safety and compliance use cases aligned with OSHA, WSIB, and CSA standards
+---
 
-#Tech Stack
-- Python
-- YOLOv8
-- OpenCV
-- PyTorch
-- NumPy
-- Matplotlib
-- Google Colab
+## Features
+- Real-time PPE detection from webcam or video streams  
+- Detection of hardhats, masks, vests, and gloves  
+- High-performance object detection using YOLOv8  
+- Automated flagging of PPE non-compliance  
+- Suitable for safety and compliance monitoring use cases (OSHA, WSIB, CSA)
 
-#How It Works
-- A YOLOv8 object detection model is loaded with pretrained or custom-trained weights.
-- Video frames are captured in real time from a webcam or video file using OpenCV.
-- Each frame is passed through the YOLOv8 model for inference.
-- Detected PPE items are classified and drawn onto the frame with bounding boxes.
-- Frames with missing required PPE are flagged as non-compliant.
-- The processed video feed is displayed live with real-time annotations
+---
+
+## Tech Stack
+- Python  
+- YOLOv8  
+- OpenCV  
+- PyTorch  
+- NumPy  
+- Matplotlib  
+- Google Colab  
+
+---
+
+## How It Works
+1. Video frames are captured from a webcam or video file using OpenCV.
+2. Frames are passed to a YOLOv8 model for real-time inference.
+3. Detected PPE items are identified and labeled with bounding boxes.
+4. Frames missing required PPE are flagged as non-compliant.
+5. The annotated video feed is displayed live.
+
+---
+
+
+---
+
+## Results
+- Achieved approximately 94% detection accuracy across PPE categories  
+- Demonstrated real-time inference performance  
+- Validated applicability for automated safety monitoring
+
+---
+
+## Future Improvements
+- Expand PPE categories and detection rules  
+- Deploy as a web or edge-based application  
+- Integrate alerting and reporting systems  
+- Optimize inference speed for low-power devices  
+
+---
+
+## License
+This project is provided for educational and demonstration purposes.
