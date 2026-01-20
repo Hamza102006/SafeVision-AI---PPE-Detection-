@@ -54,5 +54,4 @@ This project demonstrates applied computer vision, deep learning inference, and 
 
 ---
 
-## License
-This project is provided for educational and demonstration purposes.
+By: Hamza Khan
